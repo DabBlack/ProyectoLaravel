@@ -4,10 +4,17 @@
             @csrf
 
             <!-- Name -->
-            <div>
+            <div class="mt-4">
                 <x-input-label for="name" :value="__('Nombre')" />
                 <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" placeholder="Nombre" />
                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
+            </div>
+
+             <!-- Apellidos -->
+            <div class="mt-4">
+                <x-input-label for="apellidos" :value="__('Apellidos')" />
+                <x-text-input id="apellidos" class="block mt-1 w-full" type="text" name="apellidos" :value="old('apellidos')" required autofocus autocomplete="surnames" placeholder="Apellidos" />
+                <x-input-error :messages="$errors->get('apellidos')" class="mt-2" />
             </div>
 
             <!-- Email Address -->
