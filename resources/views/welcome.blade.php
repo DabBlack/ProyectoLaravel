@@ -18,7 +18,19 @@
                 <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
                     Te facilitaremos la entrada y la información de cualquier concierto al que desée asistir!
                 </p>
+            @auth
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a class="block w-full rounded border border-orange-600 bg-orange-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none active:text-opacity-75 sm:w-auto focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 transition ease-in-out duration-150"
+                        href="/concerts">
+                        Conciertos
+                    </a>
 
+                    <a class="block w-full rounded border border-orange-600 px-12 py-3 text-sm font-medium text-white hover:bg-orange-600 focus:outline-none active:bg-orange-500 sm:w-auto focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 transition ease-in-out duration-150"
+                        href="/artists">
+                        Artistas
+                    </a>
+                </div>
+            @else
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
                     <a class="block w-full rounded border border-orange-600 bg-orange-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none active:text-opacity-75 sm:w-auto focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 transition ease-in-out duration-150"
                         href="/register">
@@ -30,6 +42,7 @@
                         Inicie Sesión
                     </a>
                 </div>
+            @endauth
             </div>
         </div>
     </section>

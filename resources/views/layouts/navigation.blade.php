@@ -14,9 +14,10 @@
                 </a>
             </div>
 
+            @auth
             <div class="flex">
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:ml-10 sm:flex text-center">
+                <div class="hidden space-x-12 sm:flex text-end">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Conciertos') }}
                     </x-nav-link>
@@ -30,8 +31,7 @@
                         </x-nav-link>
                     </div> -->
             </div>
-
-            @auth
+            
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
