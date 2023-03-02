@@ -13,14 +13,14 @@
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6" enctype="multipart/form-data">
+    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6 text-black" enctype="multipart/form-data">
         @csrf
         @method('patch')
         
         <div>
             <img src="storage/img/{{$user->img_user}}" alt="Avatar" class="m-auto w-52 h-52" style="border-radius: 100%;">
             <x-input-label for="img_user" :value="__('Actualizar Avatar')" />
-            <input type="file" name="img_user" value="old('img_user', '$user->img_user')" class="mt-2">
+            <input type="file" name="img_user" value="old('img_user', '$user->img_user')" class="mt-2 text-white">
             <x-input-error class="mt-2" :messages="$errors->get('img_user')" />
          </div>
 
