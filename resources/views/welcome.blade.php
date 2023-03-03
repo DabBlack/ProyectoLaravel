@@ -26,7 +26,7 @@
                     </a>
 
                     <a class="block w-full rounded border border-orange-600 px-12 py-3 text-sm font-medium text-white hover:bg-orange-600 focus:outline-none active:bg-orange-500 sm:w-auto focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 transition ease-in-out duration-150"
-                        href="/artists">
+                        href="{{route('artistIndex')}}">
                         Artistas
                     </a>
                 </div>

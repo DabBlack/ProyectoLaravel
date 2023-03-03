@@ -1,4 +1,4 @@
-<footer aria-label="Site Footer" class="bg-neutral-800 bottom-0 w-full border-t border-orange-300">
+<footer aria-label="Site Footer" class="bg-neutral-800 bottom-0 w-full border-t border-orange-400">
   <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="flex justify-center">
       <a href="/"><h1 class="bg-gradient-to-r from-orange-300 via-orange-500 to-orange-600 bg-clip-text font-extrabold text-transparent text-5xl">DabConcerts</h1></a>
@@ -31,7 +31,7 @@
 
     <ul class="mt-12 flex justify-center gap-6 md:gap-8">
       <li>
-        <a href="https://www.facebook.com/amazongames/" rel="noreferrer" target="_blank" class="transition text-gray-400 hover:text-orange-300">
+        <a href="https://www.facebook.com/amazongames/" rel="noreferrer" target="_blank" class="transition text-gray-400 hover:text-orange-500">
           <span class="sr-only">Facebook</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89
@@ -42,7 +42,7 @@
 
       <li>
         <a
-          href="https://www.instagram.com/amazongames/?hl=es" rel="noreferrer" target="_blank" class="transition text-gray-400 hover:text-orange-300"> <span class="sr-only">Instagram</span>
+          href="https://www.instagram.com/amazongames/?hl=es" rel="noreferrer" target="_blank" class="transition text-gray-400 hover:text-orange-500"> <span class="sr-only">Instagram</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153
               1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218
@@ -63,7 +63,7 @@
       </li>
 
       <li> 
-        <a href="https://twitter.com/AMZNGameStudios?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" rel="noreferrer" target="_blank" class="transition text-gray-400 hover:text-orange-300"> 
+        <a href="https://twitter.com/AMZNGameStudios?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" rel="noreferrer" target="_blank" class="transition text-gray-400 hover:text-orange-500"> 
           <span class="sr-only">Twitter</span>
           <svg
             class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -75,7 +75,7 @@
       </li>
 
       <li> 
-        <a href="https://github.com/DabBlack" rel="noreferrer" target="_blank" class="transition text-gray-400 hover:text-orange-300">
+        <a href="https://github.com/DabBlack" rel="noreferrer" target="_blank" class="transition text-gray-400 hover:text-orange-500">
           <span class="sr-only">GitHub</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 

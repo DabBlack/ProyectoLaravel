@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-neutral-800 border-b border-orange-300">
+<nav x-data="{ open: false }" class="bg-neutral-800 border-b border-orange-400">
     <!-- Primary Navigation Menu -->
     <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -18,27 +18,22 @@
             <div class="flex">
                 <!-- Navigation Links -->
                 <div class="hidden space-x-12 sm:flex text-end">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('dashboard')">
                         {{ __('Conciertos') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link href="{{route('artistIndex')}}">
                         {{ __('Artistas') }}
                     </x-nav-link>
                 </div>
-                <!-- <div class="space-x-8 flex">
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                            {{ __('Artistas') }}
-                        </x-nav-link>
-                    </div> -->
             </div>
             
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger" class=" bg-black">
-                        <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                        <button class="inline-flex items-center px-3 py-3 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-neutral-700 hover:text-orange-500 focus:outline-none transition ease-in-out duration-150">
                             <div style="padding-left: 35px;">
-                                <img src="storage/img/{{ Auth::user()->img_user }}" alt="User Avatar" style="width: 32px; height: 32px; position: absolute; bottom: 0px; left: 5px; border-radius: 50%">
+                                <img src="storage/img/{{ Auth::user()->img_user }}" alt="User Avatar" style="width: 32px; height: 32px; position: absolute; bottom: 3px; left: 5px; border-radius: 50%">
                                 <span>{{ Auth::user()->name }}</span>
                             </div>
 
@@ -79,7 +74,6 @@
                     {{ __('Registrarse') }}
                 </x-nav-link>
             </div>
-
 
             @endauth
 
