@@ -18,10 +18,14 @@
             <div class="flex">
                 <!-- Navigation Links -->
                 <div class="hidden space-x-12 sm:flex text-end">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('dashboard')">
                         {{ __('Conciertos') }}
                     </x-nav-link>
+<<<<<<< HEAD
                     <x-nav-link href="{{route('artistIndex')}}" :active="request()->routeIs('dashboard')">
+=======
+                    <x-nav-link href="{{route('artistIndex')}}">
+>>>>>>> 65f823d377ad1461e1321699d50a655372807435
                         {{ __('Artistas') }}
                     </x-nav-link>
                 </div>

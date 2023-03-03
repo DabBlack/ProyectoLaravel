@@ -34,6 +34,11 @@ Route::get('/artists', function () {
 Route::get('/artistIndex', [ArtistController::class, 'index'])->name('artistIndex');
 Route::get('/artistCreate', [ArtistController::class, 'create'])->name('artistCreate');
 Route::post('/artistStore', [ArtistController::class, 'store'])->name('artistStore');
+<<<<<<< HEAD
+=======
+Route::delete('/artistDestroy/{id}', [ArtistController::class, 'destroy'])->name('artistDestroy');
+
+>>>>>>> 65f823d377ad1461e1321699d50a655372807435
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
