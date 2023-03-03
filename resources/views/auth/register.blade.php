@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-neutral-800 shadow-md overflow-hidden sm:rounded-lg">
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
@@ -43,7 +43,7 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+                <a class="underline text-sm text-orange-400 hover:text-orange-500 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 " href="{{ route('login') }}">
                     {{ __('¿Estas registrado? Inicia sesión.') }}
                 </a>
 

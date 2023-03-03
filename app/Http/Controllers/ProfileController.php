@@ -32,24 +32,11 @@ class ProfileController extends Controller
             $request->user()->email_verified_at = null;
         }
 
-        // if ($request->user()->isDirty('img_user')) {
-        //     $img_user = $request->file('img_user');
-        //     $filename = time() . '.' . $img_user->getClientOriginalExtension();
-        //     Image::make($img_user)->resize(300,300)->save( public_path('/storage/app/public/img/' . $filename ) );
-
-        //     $user = Auth::user();
-        //     $user->img_user = $filename;
-        // }
-
         if ($request->hasFile('img_user')) {
             $nombre_img_user = time() . '-' . $request->file('img_user')->getClientOriginalName();
             $request->user()->img_user=$nombre_img_user;
             $request->file('img_user')->storeAs('public/img', $nombre_img_user);
         }
-
-        // if ($request->user()->isDirty('img_user')) {
-            
-        // }
 
         $request->user()->save();
 
