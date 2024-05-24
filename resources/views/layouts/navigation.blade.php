@@ -21,11 +21,7 @@
                     <x-nav-link :href="route('dashboard')">
                         {{ __('Conciertos') }}
                     </x-nav-link>
-<<<<<<< HEAD
                     <x-nav-link href="{{route('artistIndex')}}" :active="request()->routeIs('dashboard')">
-=======
-                    <x-nav-link href="{{route('artistIndex')}}">
->>>>>>> 65f823d377ad1461e1321699d50a655372807435
                         {{ __('Artistas') }}
                     </x-nav-link>
                 </div>
