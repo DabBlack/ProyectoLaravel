@@ -12,11 +12,8 @@
             <div class="bg-neutral-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-12 text-gray-900 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-full">
                     @foreach ($artists as $artist)
-<<<<<<< HEAD
                         <x-card-artist-component :nombre='$artist->nombre' :descripcion='$artist->descripcion' :img_artista='$artist->img_artista'></x-card-artist-component>
-=======
                         <x-card-artist-component :id='$artist->id' :nombre='$artist->nombre' :descripcion='$artist->descripcion' :img='$artist->img_artista' ></x-card-artist-component>
->>>>>>> 65f823d377ad1461e1321699d50a655372807435
                     @endforeach
                 </div>
             </div>
